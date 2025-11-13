@@ -1,0 +1,312 @@
+/* ------------------------------
+   BASIC RESET & GLOBAL STYLES
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gabarito', sans-serif;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* ------------------------------
+   NAVBAR SECTION
+------------------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+/* Left logo */
+.navbar_s1_title {
+  color: #a435f0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Middle search bar */
+.navbar_s2 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 8px 15px;
+  background-color: #f7f7f7; /* ✅ fixed semicolon */
+  gap: 10px;
+}
+
+.navbar_s2 i {
+  color: #555;
+}
+
+.navbar_s2 input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Right section */
+.navbar_s3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar_s3 p {
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.navbar_s3 i {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* ------------------------------
+   CATEGORIES SECTION
+------------------------------ */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.categories button {
+  background: #a435f0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categories button:hover {
+  background: #8b2dd8;
+}
+
+/* ------------------------------
+   HERO / SALE IMAGE
+------------------------------ */
+.sale-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------------------
+   RECOMMENDED SECTION
+------------------------------ */
+.recommended {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+.recommended__title {
+  font-size: 28px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.recommended__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.course-card {
+  width: 23%;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.course-card h3 {
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+.course-card p {
+  font-size: 14px;
+  padding: 0 15px;
+  color: #555;
+}
+
+/* ------------------------------
+   TOPICS SECTION
+------------------------------ */
+.topics {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+.topics__title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.topics__container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topics__container p {
+  border: 1px solid gray;
+  padding: 10px 20px;
+  border-radius: 20px;
+  flex-grow: 4;
+  flex-basis: 30%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.topics__container p:hover {
+  background-color: #a435f0;
+  color: #fff;
+  border-color: #a435f0;
+}
+
+/* ------------------------------
+   POPULAR SECTION
+------------------------------ */
+.popular {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+.popular__title {
+  font-size: 28px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.popular__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* ------------------------------
+   FOOTER SECTION (BLACK BOX)
+------------------------------ */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 80px;
+  margin-top: 40px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column p {
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.footer-column p:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.udemy-logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 1024px) {
+  .course-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar_s2 {
+    width: 90%;
+  }
+
+  .navbar_s3 {
+    gap: 10px;
+  }
+
+  .recommended,
+  .topics,
+  .popular {
+    padding: 20px;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
